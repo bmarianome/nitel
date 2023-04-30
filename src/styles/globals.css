@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.filter {
+  filter: drop-shadow(0px 0px 10px #01dcfd);
+}
+
+.gradient {
+  background: linear-gradient(to top left, #35068c 0%, #4208a3 14.28%, #770eff 28.57%, #5d3cff 42.85%, #3580fd 57.13%, #2897fd 71.41%, #01dcfd 86.21%);
+}
+
+.text-gradient {
+  background-image: linear-gradient(to top left, #35068c 0%, #4208a3 14%, #770eff 28%, #5d3cff 42%, #3580fd 58%, #2897fd 74%, #01dcfd 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+.foo {
+  transform: translate3d(0,0,0)
+}
+
+/* ANIMACIONES DE LOS MAPAS */
+#cba-shadow-mobile,
+#lineas-adelante-mobile,
+#cba-shadow-desktop,
+#lineas-adelante-desktop {
+  @apply animate-maps;
+}
+
+#VerAreasButton {
+  @apply animate-[animationVerAreasButton_.25s_.375s_forwards];
+}
+
+@keyframes animationVerAreasButton {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#WhatsappButtonFixed {
+  @apply animate-[translatex150_.5s]
+}
+
+.slot-machine-animation {
+  animation: typing 2s steps(17) forwards, blink 0.75s step-end infinite;
+  @apply block whitespace-nowrap border-r-2 w-[11ch] overflow-hidden;
+}
+
+@keyframes typing {
+  from {
+    @apply w-0;
+  }
+  to {
+    @apply border-r-0 border-transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    @apply border-r-transparent;
+  }
+}
+
+@media (max-height: 600px) {
+  .hidden-on-height {
+    @apply hidden;
+  }
+
+  .scale-on-height {
+    @apply scale-75;
+  }
+
+  .reduce-margin-top-on-height {
+    @apply mt-6;
+  }
+}
+
+#Icono {
+  animation: animation 1s var(--delay) forwards;
+}
+
+@keyframes animation {
+  100% { opacity: 1 }
+}
