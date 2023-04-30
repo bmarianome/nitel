@@ -1,23 +1,31 @@
-import type { ReactNode } from "react";
-// import { isCartOpen } from "../SlideState";
-// import { useStore } from "@nanostores/react";
+"use client"
+import { slideOverState } from "./VerAreasSlide";
 import { m, LazyMotion, domAnimation } from "framer-motion"
+import Image from "next/image";
+import logoNitelN from "public/logo-nitel.png"
 
-const LogoYTituloContent = ({ children }: { children: ReactNode }) => {
+const LogoYTituloContent = () => {
 
-  // const isOpen = useStore(isCartOpen);
+  const { open } = slideOverState()
 
   return (
     // IF ISOPEN OPACITY 0, ALSO LG: OPACITY 100 ALWAYS
-    <div className={`${false ? "opacity-0" : "opacity-100"} duration-200 lg:opacity-100`}>
+    <div className={`${open ? "opacity-0" : "opacity-100"} duration-200 lg:opacity-100`}>
       <LazyMotion features={domAnimation}>
         <m.div
-          transition={{ duration: .5, ease: 'linear' }}
-          initial={{ opacity: 0, scale: .5 }}
-          viewport={{ once: true }}
+          transition={{ duration: .25, ease: 'linear' }}
+          initial={{
+            opacity: 0, scale: .5 }}
+          viewport={{ once: true, margin: "500px 0px 0px 0px" }}
           whileInView={{ opacity: 1, scale: [.5, 1] }}
+          className="flex justify-center w-full"
         >
-          {children}
+          <Image
+            priority
+            src={logoNitelN}
+            className="w-2/3 lg:w-1/3"
+            alt=""
+          />
         </m.div>
       </LazyMotion>
 

@@ -1,14 +1,13 @@
-
-// import { useStore } from '@nanostores/react';
-// import { isCartOpen } from '../SlideState';
+"use client"
+import { slideOverState } from "../content/VerAreasSlide";
 
 const VerAreasButton = () => {
 
-  // const isOpen = useStore(isCartOpen);
+  const { setOpen } = slideOverState()
 
   function OpenAreasDeCobertura() {
     setTimeout(() => {
-      // isCartOpen.set(!isOpen)
+      setOpen(true);
     }, 250);
     const element = document.getElementById('AreasDeCobertura');
     element?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
@@ -17,7 +16,9 @@ const VerAreasButton = () => {
   return (
     <button
       id='VerAreasButton'
-      className="text-sm font-semibold leading-6 text-white hover:underline translate-x-[-100px] opacity-0"
+      className="text-sm font-semibold leading-6 text-white hover:underline translate-x-[-100px] opacity-0
+      animate-[animationVerAreasButton_.25s_.75s_forwards]
+      "
       onClick={() => OpenAreasDeCobertura()}
     >
       Ver áreas de cobertura

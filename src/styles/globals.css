@@ -16,9 +16,6 @@
   color: transparent;
 }
 
-.foo {
-  transform: translate3d(0,0,0)
-}
 
 /* ANIMACIONES DE LOS MAPAS */
 #cba-shadow-mobile,
@@ -26,10 +23,6 @@
 #cba-shadow-desktop,
 #lineas-adelante-desktop {
   @apply animate-maps;
-}
-
-#VerAreasButton {
-  @apply animate-[animationVerAreasButton_.25s_.375s_forwards];
 }
 
 @keyframes animationVerAreasButton {
@@ -42,7 +35,7 @@
 @keyframes animation {
   0% {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-100px);
   }
 
   100% {
@@ -91,8 +84,4 @@
 
 #Icono {
   animation: animation 1s var(--delay) forwards;
-}
-
-@keyframes animation {
-  100% { opacity: 1 }
 }
