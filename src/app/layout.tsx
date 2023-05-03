@@ -1,15 +1,13 @@
 import '../styles/globals.css'
 
 export const metadata = {
-  
+
   title: 'Nitel te conecta',
   description: 'Conectá todos tus dispositivos y disfrutá tus actividades con el plan de internet que más te convenga. Mirá contenido, hacé videollamadas, jugá online, ¡sin límites!',
   themeColor: '#111827',
 
   viewport: {
     width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
   },
 
   openGraph: {
@@ -34,6 +32,10 @@ export const metadata = {
       type: 'image/png',
     },
     shortcut: {
+      url: '/favicon-nitel.png',
+      type: 'image/png',
+    },
+    shortcutIcon: {
       url: '/favicon-nitel.png',
       type: 'image/png',
     },
