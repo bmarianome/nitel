@@ -1,6 +1,6 @@
 const WhatsappButtonFixed = () => {
   return (
-    <a id='WhatsappButtonFixed' href="https://wa.me/+543516472777/?text=Hola, quiero realizar una consulta"
+    <a aria-label="Contactarme por Whatsapp" id='WhatsappButtonFixed' href="https://wa.me/+543516472777/?text=Hola, quiero realizar una consulta"
       target="_blank"
       className="fixed bottom-20 2xl:bottom-10 right-6 lg:right-10 p-3 rounded-full bg-[#25D366] z-50"
     >
