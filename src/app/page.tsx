@@ -1,5 +1,5 @@
 import { type NextPage } from "next";
-import WhatsappButtonFixed from "~/components/WhatsappButtonFixed";
+import FixedButtons from "~/components/FixedButtons";
 import Content from "~/components/content/Content";
 import Hero from "~/components/hero/Hero";
 
@@ -30,7 +30,7 @@ const Home: NextPage = () => (
         </div>
       </div>
 
-      <WhatsappButtonFixed />
+      <FixedButtons />
       <Hero />
       <Content />
     </div>

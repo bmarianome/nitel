@@ -44,7 +44,7 @@
   }
 }
 
-#WhatsappButtonFixed {
+#WhatsappButtonFixed , #TwitterButtonFixed {
   @apply animate-[translatex150_.5s]
 }
 
