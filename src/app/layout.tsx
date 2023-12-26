@@ -1,14 +1,14 @@
 import '../styles/globals.css'
 
+export const viewport = {
+  width: 'device-width',
+  themeColor: '#111827',
+}
+
 export const metadata = {
 
   title: 'Nitel te conecta',
   description: 'Conectá todos tus dispositivos y disfrutá tus actividades con el plan de internet que más te convenga. Mirá contenido, hacé videollamadas, jugá online, ¡sin límites!',
-  themeColor: '#111827',
-
-  viewport: {
-    width: 'device-width',
-  },
 
   openGraph: {
     title: 'Nitel te conecta',
