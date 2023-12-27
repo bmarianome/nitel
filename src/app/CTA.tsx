@@ -15,13 +15,13 @@ export default function CTA() {
           <Link
             target="_blank"
             rel="noreferrer"
-            href="https://wa.me/+543516472777/?text=Hola, quiero realizar una consulta"
-            className="mt-4 lg:mt-8 w-full block relative z-10 text-center max-w-xs animate-[opacity01_.5s] rounded-md bg-[#01dcfd] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm"
+            href="https://twitter.com/NitelArgentina"
+            className="relative z-10 mt-4 block w-full max-w-xs animate-[opacity01_.5s] rounded-md bg-[#01dcfd] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm lg:mt-8"
           >
             Ver las novedades →
           </Link>
         </div>
-        
+
         <div className="flex w-full justify-center lg:aspect-[1/1]">
           <Image
             src="/phone.png"
