@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function FixedButtons() {
   return (
-    <div className="fixed top-[45%] right-6 z-50 lg:right-10">
+    <div className="fixed right-6 top-64 z-50 lg:right-10 lg:top-[45%]">
       <div className="flex flex-col gap-6">
         <Link
           aria-label="Contactarme por Whatsapp"
