@@ -3,6 +3,7 @@ import Content from "~/components/content/Content";
 import Hero from "~/components/hero/Hero";
 import CTA from "./CTA";
 import Link from "next/link";
+import FixedClientsButton from "~/components/FixedClientsButton";
 
 export default function Home() {
   return (
@@ -48,6 +49,7 @@ export default function Home() {
         </div>
 
         <FixedButtons />
+        <FixedClientsButton />
         <Hero />
 
         <div className="relative isolate overflow-hidden">
