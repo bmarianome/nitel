@@ -49,7 +49,7 @@ export default function Home() {
         </div>
 
         <FixedButtons />
-        <FixedClientsButton />
+        {/* <FixedClientsButton /> */}
         <Hero />
 
         <div className="relative isolate overflow-hidden">

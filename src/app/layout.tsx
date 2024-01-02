@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import "../styles/globals.css";
 
 export const viewport = {
@@ -5,7 +6,8 @@ export const viewport = {
   themeColor: "#111827",
 };
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL('https://nitel.com.ar'),
   title: "Nitel te conecta",
   description:
     "Conectá todos tus dispositivos y disfrutá tus actividades con el plan de internet que más te convenga. Mirá contenido, hacé videollamadas, jugá online, ¡sin límites!",
@@ -36,10 +38,6 @@ export const metadata = {
       url: "/favicon-nitel.png",
       type: "image/png",
     },
-    shortcutIcon: {
-      url: "/favicon-nitel.png",
-      type: "image/png",
-    },
     apple: [
       {
         url: "/favicon-nitel.png",
@@ -50,9 +48,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    domain: "nitel.com.ar",
     title: "Nitel te conecta",
-    url: "https://nitel.com.ar",
     description: "The React Framework for the Web",
     images: {
       url: "/social-media-card.png",

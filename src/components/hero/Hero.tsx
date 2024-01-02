@@ -13,9 +13,9 @@ const Hero = () => (
           {/* LOGO */}
           <Image
             priority
-            className="scale-on-height w-[188px] animate-[animation_.5s_.25s_forwards] opacity-0 sm:w-80"
+            className="scale-on-height w-[156px] animate-[animation_.5s_.25s_forwards] opacity-0 sm:w-80"
             src={nitelFullWordLogo}
-            sizes="(max-width: 620px) 188px, 320px"
+            sizes="(max-width: 620px) 156px, 320px"
             alt=""
           />
 
@@ -24,8 +24,8 @@ const Hero = () => (
             className="scale-on-height relative h-max w-max animate-[animation_.5s_.5s_forwards] opacity-0"
             id="TituloHero"
           >
-            <h1 className="reduce-margin-top-on-height mt-6 h-max w-max overflow-hidden pr-[0.08em] text-4xl font-bold uppercase italic tracking-tight text-white sm:text-5xl lg:mt-8">
-              Internet / Calidad
+            <h1 className="reduce-margin-top-on-height mt-6 h-max w-max overflow-hidden pr-[0.08em] text-3xl font-bold uppercase italic tracking-tight text-white sm:text-5xl lg:mt-8">
+              Internet /<br /> Calidad
             </h1>
           </div>
 
