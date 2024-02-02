@@ -7,7 +7,7 @@ export default function FixedButtons() {
         <Link
           aria-label="Contactarme por Whatsapp"
           id="WhatsappButtonFixed"
-          href="https://bills11.ispcube.com/"
+          href="https://autogestion.nitel.com.ar"
           target="_blank"
           className="gradient block rounded-full px-3.5 py-2.5 text-xs text-white shadow-lg lg:text-lg lg:font-medium"
         >
